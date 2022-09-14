@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "music_files",
+  "info": {
+    "singularName": "music-file",
+    "pluralName": "music-files",
+    "displayName": "Music File"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "music": {
+      "allowedTypes": [
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
