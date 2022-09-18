@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "image_files",
+  "info": {
+    "singularName": "image-file",
+    "pluralName": "image-files",
+    "displayName": "Image File"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
